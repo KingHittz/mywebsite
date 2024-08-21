@@ -1,71 +1,69 @@
-<link rel="stylesheet" href="styles.css">
-<h1 id='title'>How does king hittz entertain his followers?</h1>
-<p id='description'>Thank you for taking the time to help King Hittz improve his stream!</p>
+<!DOCTYPE html>
+<link rel="stylesheet" href="style.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>King Hittz - Twitch Streamer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>King Hittz</h1>
+            <p>Twitch Streamer | Phasmophobia & Rainbow Six Siege</p>
+        </div>
+    </header>
 
-<form id='survey-form'>
-  <div class='input-element'>
-    <label id="name-label">
-    Name
-    </label> 
-    <input placeholder='name' id='name'type='text' required/>
-  </div>
-</form>
-<form id='survey-form'>
-  <div class='input-element'>
-    <label id="email-label">
-    Email
-    </label> 
-    <input placeholder='email' id='email'type='email' required/>
-  </div>
-</form>
-<form id='survey-form'>
-  <div class='input-element'>
-    <label id="number-label">
-    Age
-    </label> 
-    <input placeholder='age' id='number'min="12" max='100' type='number' required/>
-  </div>
-<div class='input-element'>
-    <label id="select-label">
-    What is your favorite game King Hittz stream?
-    </label> 
-    <select id='dropdown'>
-      <option>Rainbow Six Seige</option>
-      <option>Phasmophobia</option>
-      <option>Minecraft</option>
-      <option>Other</option>
-    </select>
-  </div>
-    <div>
-    <label>Are you subscribed on twitch?</label>
-    <div>
-    <label><input type='radio' name='sub'value='option1'/>Yes</label>
-    </div>
-    <div>
-    <label><input type='radio' name='sub'value='option2'/>No</label>
-    </div>
-  </div> 
-   <div>
-    <label>Why do you watch King Hittz?</label>
-    <div>
-    <label><input type='checkbox' name='qualities'value="comedy"/>His comedy</label>
-    </div>
-    <div>
-    <label><input type='checkbox' name='qualities'value="gameplay"/>His gameplay</label>
-    </div>
-    <div>
-    <label><input type='checkbox' name='qualities'value="rage"/>His rage</label>
-    </div>
-    <div>
-    <label><input type='checkbox' name='qualities'value="troll"/>To troll</label>
-    </div>
-  </div> 
-    <div>
-      <label>Additional comments?</label>
-      <div>
-      <textarea type='text'></textarea>
-    </div>
-    <button type='submit' id='submit'>
-      Submit
-    </button>
-</form>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Welcome to the official portfolio of King Hittz! I stream on Twitch from Sunday through Thursday. My main games are Phasmophobia and Rainbow Six Siege. Catch me live and enjoy some thrilling gameplay!</p>
+            <a href="https://www.youtube.com/@KingHittz" target="_blank">Check out my YouTube channel!</a>
+        </div>
+    </section>
+
+    <section id="schedule">
+        <div class="container">
+            <h2>Streaming Schedule</h2>
+            <ul>
+                <li>Sunday - Thursday: 6 PM - 11 PM (EST)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="https://formspree.io/f/your_form_id" method="POST">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">How do I entertain you and what games would you like me to stream?</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 King Hittz. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
